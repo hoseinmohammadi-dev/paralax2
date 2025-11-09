@@ -15,8 +15,27 @@ window.addEventListener("scroll", () => {
     if (winB >= sec2St) {
         sec2H2.classList.add("fadeUp")
     }
-     else {
+    else {
         sec2H2.classList.remove("fadeUp")
     }
 
 });
+
+
+// hover for sec2
+
+const overlay = document.querySelector(".sec2 .overlay");
+const cards = document.querySelectorAll(".sec2 > div > div");
+
+cards.forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        overlay.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
+        card.style.position = "relative";
+        card.style.zIndex = "1000";
+    });
+    card.addEventListener("mouseleave", () => {
+        overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
+        card.style.zIndex = "10";
+    })
+})
+
