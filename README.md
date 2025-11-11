@@ -7,10 +7,7 @@ It includes smooth **parallax effects**, **fade-in transitions**, and **interact
 
 ## 🖼️ Project Preview
 
-<div style="display:flex;gap:12px;flex-wrap:wrap;">
-    <img width="48%" alt="Parallax Preview 1" src="https://github.com/user-attachments/assets/your-image-1.png" />
-    <img width="48%" alt="Parallax Preview 2" src="https://github.com/user-attachments/assets/your-image-2.png" />
-</div>
+<img width="1899" height="871" alt="Image" src="https://github.com/user-attachments/assets/f1adca46-f768-4330-b832-693a0c5710f7" />
 
 ---
 
