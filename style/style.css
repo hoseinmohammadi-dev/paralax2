@@ -169,7 +169,10 @@ body {
 
         }
 
-        .sec3 {
+        .sec3 , .sec5 {
+            position: relative;
+            z-index: 50;
+            padding-top: 100px;
             display: flex;
             justify-content: space-between;
             background-color: #fff;
@@ -191,36 +194,71 @@ body {
                 width: 50%;
                 color: #000;
 
-                >div{
-                    margin-bottom: 200px;
+                >div {
+                    margin-bottom: 30px;
 
-                    >video{
+                    >video {
                         width: 100%;
                         margin-bottom: 30px;
                         scale: 1.05;
-                        opacity: 80%;
+                        opacity: 98%;
                     }
 
-                    >span{
-                        color:#677eff ;
+                    >span {
+                        color: #677eff;
                         font-weight: bold;
                         font-size: 30px;
                     }
 
-                    >h3{
+                    >h3 {
                         font-size: 50px;
                         margin-top: 20px;
                     }
-                    
-                    >p{
+
+                    >p {
                         margin-top: 10px;
                         width: 80%;
                         color: #575757;
                     }
-
-
-                    
                 }
+            }
+        }
+
+        .sec4 {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            height: 218vh;
+            background-image: url(/assets/img/sec4/part2.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            >span {
+                width: 100%;
+                height: 10px;
+                position: absolute;
+                top: 150px;
+
+            }
+
+            >h2 {
+                width: 100%;
+                position: absolute;
+                top: 145px;
+                line-height: 160px;
+                text-align: center;
+                font-size: 180px;
+                text-transform: uppercase;
+            }
+
+            >img {
+                width: 100%;
+                position: absolute;
+                z-index: 10;
+                bottom: -180px;
+                transition: transform 0.2s linear;
+                scale: 1;
             }
         }
 
