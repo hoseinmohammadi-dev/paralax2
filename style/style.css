@@ -169,7 +169,8 @@ body {
 
         }
 
-        .sec3 , .sec5 {
+        .sec3,
+        .sec5 {
             position: relative;
             z-index: 50;
             padding-top: 100px;
@@ -234,14 +235,6 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
 
-            >span {
-                width: 100%;
-                height: 10px;
-                position: absolute;
-                top: 150px;
-
-            }
-
             >h2 {
                 width: 100%;
                 position: absolute;
@@ -260,6 +253,103 @@ body {
                 transition: transform 0.2s linear;
                 scale: 1;
             }
+        }
+
+        .sec6 {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            height: 200vh;
+            background-image: url(/assets/img/sec6/sec6Bg.jpg);
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            >h2 {
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                line-height: 160px;
+                text-align: center;
+                font-size: 180px;
+                text-transform: uppercase;
+            }
+
+            >img {
+                width: 100%;
+                position: absolute;
+                z-index: 10;
+                bottom: 0px;
+                transition: transform 0.2s linear;
+                scale: 0.9;
+                transform-origin: bottom;
+            }
+        }
+
+        >footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            width: 100%;
+            background-color: #fff;
+            padding-bottom: 50px;
+
+
+
+            >h2 {
+                color: #000;
+                font-size: 90px;
+                text-align: center;
+            }
+
+            >div {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.247);
+                width: 600px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 50px;
+
+                >span {
+
+                    >a {
+
+                        >i {
+                            padding-right: 10px;
+                            color: #000;
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    >div {
+                        color: #000;
+
+                        >h4 {
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                            font-size: 18px;
+                        }
+
+                        >p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    >img {
+                        width: 80px;
+                        padding: 5px;
+                    }
+                }
+
+            }
+
         }
 
     }

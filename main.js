@@ -14,6 +14,10 @@ const sec4img = document.querySelector(".sec4 > img");
 const sec5 = document.querySelector(".sec5");
 const sec5H2 = document.querySelector(".sec5 > .text > h2");
 
+const sec6 = document.querySelector(".sec6");
+const sec6H2 = document.querySelector(".sec6 > h2");
+const sec6img = document.querySelector(".sec6 > img");
+
 
 window.addEventListener("scroll", () => {
     const winT = window.scrollY;
@@ -22,6 +26,7 @@ window.addEventListener("scroll", () => {
     const sec3St = sec3.offsetTop;
     const sec4St = sec4.offsetTop;
     const sec5St = sec5.offsetTop;
+    const sec6St = sec6.offsetTop;
 
 
 
@@ -49,18 +54,31 @@ window.addEventListener("scroll", () => {
         sec4H2.classList.remove("fadeUnder")
     }
 
-    if (winB >= sec4H2 ) {
-        sec4img.style.transform = `translateY(${winB *10}px) `;
+    if (winB >= sec4H2) {
     }
     else {
         sec4img.style.transform = `translateY(-${winB * 0.1}px) scale(${1 + winB * 0.0001})`;
     }
 
-     if (winB >= sec5St) {
+    if (winB >= sec5St) {
         sec5H2.classList.add("fadeUp")
     }
     else {
         sec5H2.classList.remove("fadeUp")
+    }
+
+
+    if (winB >= sec6St) {
+        sec6H2.classList.add("fadeUnder")
+        sec6img.style.transform = `scale(${ winB * 0.0001})`
+    }
+    else {
+        sec6H2.classList.remove("fadeUnder")
+    }
+
+    if (winB >= sec6H2) {
+    }
+    else {
     }
 
 });
