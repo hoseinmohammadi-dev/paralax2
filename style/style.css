@@ -173,7 +173,7 @@ body {
         .sec5 {
             position: relative;
             z-index: 50;
-            padding-top: 100px;
+            padding-top: 20px;
             display: flex;
             justify-content: space-between;
             background-color: #fff;
